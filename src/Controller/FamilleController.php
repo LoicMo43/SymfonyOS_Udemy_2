@@ -20,7 +20,7 @@ class FamilleController extends AbstractController
     }
 
     #[Route('/famille/{id}', name: 'afficher_famille')]
-    public function afficherFamille(Famille $famille, $id): Response {
+    public function afficherFamille(Famille $famille): Response {
 
         return $this->render('famille/afficherFamille.html.twig', [
             'famille' => $famille,

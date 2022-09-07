@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7fc477e-7793-4445-beb7-d043a68a63ea" name="Changes" comment="Commit Projet">
-      <change afterPath="$PROJECT_DIR$/templates/animal/afficherAnimal.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/famille/afficherFamille.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+    <list default="true" id="e7fc477e-7793-4445-beb7-d043a68a63ea" name="Changes" comment="35 Udemy">
+      <change afterPath="$PROJECT_DIR$/templates/continent/afficherContinent.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AnimalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AnimalController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AnimalFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AnimalFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Animal.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Animal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FamilleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FamilleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/animal/afficherAnimal.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animal/afficherAnimal.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/animal/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animal/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/famille/afficherFamille.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/famille/afficherFamille.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/famille/familles.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/famille/familles.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,23 +172,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/lmo/Desktop/Symfony/2-animaux/templates/animal",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Errors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lmo/Desktop/Symfony/2-animaux/templates/continent&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/continent" />
       <recent name="$PROJECT_DIR$/templates/animal" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -213,7 +213,8 @@
       <workItem from="1662468345243" duration="5404000" />
       <workItem from="1662475069109" duration="3000" />
       <workItem from="1662475162584" duration="67000" />
-      <workItem from="1662534909492" duration="10219000" />
+      <workItem from="1662534909492" duration="14497000" />
+      <workItem from="1662556605342" duration="1793000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Projet">
       <created>1662475196790</created>
@@ -222,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662475196790</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="35 Udemy">
+      <created>1662552318891</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662552318891</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +249,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit Projet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Projet" />
+    <MESSAGE value="35 Udemy" />
+    <option name="LAST_COMMIT_MESSAGE" value="35 Udemy" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

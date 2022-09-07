@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\AnimalRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -28,6 +30,17 @@ class Animal
 
     #[ORM\Column]
     private ?bool $dangereux = null;
+
+    #[ORM\ManyToOne(inversedBy: 'animaux')]
+    private ?Famille $famille = null;
+
+    #[ORM\ManyToMany(targetEntity: Continent::class, mappedBy: 'animaux')]
+    private Collection $continents;
+
+    public function __construct()
+    {
+        $this->continents = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -90,6 +103,45 @@ class Animal
     public function setDangereux(bool $dangereux): self
     {
         $this->dangereux = $dangereux;
+
+        return $this;
+    }
+
+    public function getFamille(): ?Famille
+    {
+        return $this->famille;
+    }
+
+    public function setFamille(?Famille $famille): self
+    {
+        $this->famille = $famille;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Continent>
+     */
+    public function getContinents(): Collection
+    {
+        return $this->continents;
+    }
+
+    public function addContinent(Continent $continent): self
+    {
+        if (!$this->continents->contains($continent)) {
+            $this->continents->add($continent);
+            $continent->addAnimaux($this);
+        }
+
+        return $this;
+    }
+
+    public function removeContinent(Continent $continent): self
+    {
+        if ($this->continents->removeElement($continent)) {
+            $continent->removeAnimaux($this);
+        }
 
         return $this;
     }
